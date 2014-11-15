@@ -111,20 +111,25 @@
                 app:showAsAction="ifRoom"
                 android:title="@string/article_toggle_marked"/>
             <item
+                android:id="@+id/set_unread"
+                android:icon="@drawable/ic_read_light"
+                app:showAsAction="ifRoom"
+                android:title="@string/article_set_unread"/>
+            <item
+                android:id="@+id/share_article"
+                android:icon="@drawable/ic_share_light"
+                app:showAsAction="ifRoom"
+                android:title="@string/share_article"/>
+            <item
                 android:id="@+id/toggle_published"
                 android:icon="@drawable/ic_menu_unpublished_light"
-                app:showAsAction="ifRoom"
+                app:showAsAction=""
                 android:title="@string/article_toggle_published"/>
             <item
                 android:id="@+id/toggle_attachments"
                 android:icon="@drawable/ic_menu_attaches_light"
                 app:showAsAction=""
                 android:title="@string/attachments_prompt"/>
-            <item
-                android:id="@+id/share_article"
-                android:icon="@drawable/ic_share_light"
-                app:showAsAction="ifRoom"
-                android:title="@string/share_article"/>
             <!--  android:actionProviderClass="android.widget.ShareActionProvider" -->
             <item
                 android:id="@+id/set_labels"
@@ -139,12 +144,6 @@
             <item
                 android:id="@+id/catchup_above"
                 android:title="@string/article_mark_read_above"/>
-
-            <item
-                android:id="@+id/set_unread"
-                android:icon="@drawable/ic_read_light"
-                app:showAsAction=""
-                android:title="@string/article_set_unread"/>
 
         </group>
 
