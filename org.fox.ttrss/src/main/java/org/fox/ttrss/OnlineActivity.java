@@ -479,9 +479,10 @@ public class OnlineActivity extends CommonActivity {
 	
 	public void checkTrial(boolean notify) {
         if (!BuildConfig.DEBUG) {
-
-            boolean isTrial = getPackageManager().checkSignatures(
-                    getPackageName(), "org.fox.ttrss.key") != PackageManager.SIGNATURE_MATCH;
+            // Always set as not trial, as the signature check doesn't seem to work with my version
+            boolean isTrial = false;
+            /* getPackageManager().checkSignatures(
+                    getPackageName(), "org.fox.ttrss.key") != PackageManager.SIGNATURE_MATCH; */
 
             if (isTrial) {
                 long firstStart = m_prefs.getLong("date_firstlaunch_trial", -1);
